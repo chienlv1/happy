@@ -180,12 +180,23 @@ canvas {
   box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
   -webkit-transform-origin: bottom center;
 }
+@media screen and (max-width: 768px) {
+  .container-birthday .balloon > div {
+    width: 80px;
+    height: 108px;
+  }
+}
 .container-birthday .balloon > div:nth-child(1) {
   background: rgba(182, 15, 97, 0.9);
   left: 0;
   box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
   -webkit-animation: balloon1 6s ease-in-out infinite;
   animation: balloon1 6s ease-in-out infinite;
+}
+@media screen and (max-width: 768px) {
+  .container-birthday .balloon > div:nth-child(1) {
+    top: -65px;
+  }
 }
 .container-birthday .balloon > div:nth-child(1):before {
   color: rgba(182, 15, 97, 0.9);
@@ -197,6 +208,12 @@ canvas {
   -webkit-animation: balloon2 6s ease-in-out infinite;
   animation: balloon2 6s ease-in-out infinite;
 }
+@media screen and (max-width: 768px) {
+  .container-birthday .balloon > div:nth-child(2) {
+    left: 0;
+    top: 64px;
+  }
+}
 .container-birthday .balloon > div:nth-child(2):before {
   color: rgba(242, 112, 45, 0.9);
 }
@@ -206,6 +223,11 @@ canvas {
   box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
   -webkit-animation: balloon4 6s ease-in-out infinite;
   animation: balloon4 6s ease-in-out infinite;
+}
+@media screen and (max-width: 768px) {
+  .container-birthday .balloon > div:nth-child(3) {
+    left: 100px;
+  }
 }
 .container-birthday .balloon > div:nth-child(3):before {
   color: rgba(45, 181, 167, 0.9);
@@ -217,6 +239,11 @@ canvas {
   -webkit-animation: balloon1 5s ease-in-out infinite;
   animation: balloon1 5s ease-in-out infinite;
 }
+@media screen and (max-width: 768px) {
+  .container-birthday .balloon > div:nth-child(4) {
+    left: 200px;
+  }
+}
 .container-birthday .balloon > div:nth-child(4):before {
   color: rgba(190, 61, 244, 0.9);
 }
@@ -226,6 +253,11 @@ canvas {
   box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
   -webkit-animation: balloon3 5s ease-in-out infinite;
   animation: balloon3 5s ease-in-out infinite;
+}
+@media screen and (max-width: 768px) {
+  .container-birthday .balloon > div:nth-child(5) {
+    left: 300px;
+  }
 }
 .container-birthday .balloon > div:nth-child(5):before {
   color: rgba(180, 224, 67, 0.9);
@@ -237,6 +269,13 @@ canvas {
   -webkit-animation: balloon2 3s ease-in-out infinite;
   animation: balloon2 3s ease-in-out infinite;
 }
+@media screen and (max-width: 768px) {
+  .container-birthday .balloon > div:nth-child(6) {
+    left: 0;
+    top: -65px;
+    right: 30px;
+  }
+}
 .container-birthday .balloon > div:nth-child(6):before {
   color: rgba(242, 194, 58, 0.9);
 }
@@ -247,6 +286,11 @@ canvas {
   left: 52px;
   content: "▲";
   font-size: 1em;
+}
+@media screen and (max-width: 768px) {
+  .container-birthday .balloon > div:before {
+    left: 34px;
+  }
 }
 .container-birthday span {
   font-size: 5em;
@@ -670,6 +714,13 @@ canvas {
   left: 40%;
   transform: translateX(-40%);
 }
+@media screen and (max-width: 768px) {
+  .cake {
+    top: 38%;
+    left: 32%;
+    transform: none;
+  }
+}
 .cake form {
   width: 150px;
   height: 150px;
@@ -786,6 +837,15 @@ canvas {
   left: 60%;
   transform: translateX(-60%);
 }
+@media screen and (max-width: 992px) {
+  .gallery {
+    top: 68%;
+    transform: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
 
 .gallery > img {
   grid-area: 1/1;
@@ -808,31 +868,31 @@ canvas {
 .gallery > img:nth-child(1) {
   -webkit-animation-delay: calc(0*var(--d));
           animation-delay: calc(0*var(--d));
-  --r: 13deg;
+  --r: 14deg;
 }
 
 .gallery > img:nth-child(2) {
   -webkit-animation-delay: calc(-0.2*var(--d));
           animation-delay: calc(-0.2*var(--d));
-  --r: 10deg;
+  --r: -17deg;
 }
 
 .gallery > img:nth-child(3) {
   -webkit-animation-delay: calc(-0.4*var(--d));
           animation-delay: calc(-0.4*var(--d));
-  --r: 17deg;
+  --r: 8deg;
 }
 
 .gallery > img:nth-child(4) {
   -webkit-animation-delay: calc(-0.6*var(--d));
           animation-delay: calc(-0.6*var(--d));
-  --r: -15deg;
+  --r: 11deg;
 }
 
 .gallery > img:nth-child(5) {
   -webkit-animation-delay: calc(-0.8*var(--d));
           animation-delay: calc(-0.8*var(--d));
-  --r: -5deg;
+  --r: 6deg;
 }
 
 @-webkit-keyframes slide {

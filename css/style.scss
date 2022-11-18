@@ -152,6 +152,10 @@ opacity: 0;
     padding: 10px;
     box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
     -webkit-transform-origin: bottom center;
+    @media screen and (max-width: 768px) {
+      width: 80px;
+      height: 108px;
+    }
   }
   .balloon > div:nth-child(1) {
     background: rgba(182, 15, 97, 0.9);
@@ -161,6 +165,9 @@ opacity: 0;
     -moz-animation: balloon1 6s ease-in-out infinite;
     -o-animation: balloon1 6s ease-in-out infinite;
     animation: balloon1 6s ease-in-out infinite;
+    @media screen and (max-width: 768px) {
+      top: -65px
+    }
   }
   .balloon > div:nth-child(1):before {
     color: rgba(182, 15, 97, 0.9);
@@ -173,6 +180,10 @@ opacity: 0;
     -moz-animation: balloon2 6s ease-in-out infinite;
     -o-animation: balloon2 6s ease-in-out infinite;
     animation: balloon2 6s ease-in-out infinite;
+    @media screen and (max-width: 768px) {
+      left: 0;
+      top: 64px;
+    }
   }
   .balloon > div:nth-child(2):before {
     color: rgba(242, 112, 45, 0.9);
@@ -185,6 +196,9 @@ opacity: 0;
     -moz-animation: balloon4 6s ease-in-out infinite;
     -o-animation: balloon4 6s ease-in-out infinite;
     animation: balloon4 6s ease-in-out infinite;
+    @media screen and (max-width: 768px) {
+      left: 100px;
+    }
   }
   .balloon > div:nth-child(3):before {
     color: rgba(45, 181, 167, 0.9);
@@ -197,6 +211,9 @@ opacity: 0;
     -moz-animation: balloon1 5s ease-in-out infinite;
     -o-animation: balloon1 5s ease-in-out infinite;
     animation: balloon1 5s ease-in-out infinite;
+    @media screen and (max-width: 768px) {
+      left: 200px;
+    }
   }
   .balloon > div:nth-child(4):before {
     color: rgba(190, 61, 244, 0.9);
@@ -209,6 +226,9 @@ opacity: 0;
     -moz-animation: balloon3 5s ease-in-out infinite;
     -o-animation: balloon3 5s ease-in-out infinite;
     animation: balloon3 5s ease-in-out infinite;
+    @media screen and (max-width: 768px) {
+      left: 300px;
+    }
   }
   .balloon > div:nth-child(5):before {
     color: rgba(180, 224, 67, 0.9);
@@ -221,6 +241,11 @@ opacity: 0;
     -moz-animation: balloon2 3s ease-in-out infinite;
     -o-animation: balloon2 3s ease-in-out infinite;
     animation: balloon2 3s ease-in-out infinite;
+    @media screen and (max-width: 768px) {
+      left: 0;
+      top: -65px;
+      right: 30px;
+    }
   }
   .balloon > div:nth-child(6):before {
     color: rgba(242, 194, 58, 0.9);
@@ -232,6 +257,9 @@ opacity: 0;
     left: 52px;
     content:"▲";
     font-size: 1em;
+    @media screen and (max-width: 768px) {
+      left: 34px;
+    }
   }
   span {
     font-size: 5em;
@@ -749,6 +777,11 @@ opacity: 1;
   transform: translateY(-55%);
   left: 40%;
   transform: translateX(-40%);
+  @media screen and (max-width: 768px) {
+    top: 38%;
+    left: 32%;
+    transform: none;
+  }
   form {
     width: 150px;
     height: 150px;
@@ -964,6 +997,13 @@ $n:5; /* number of images*/
   transform: translateY(-55%);
   left: 60%;
   transform: translateX(-60%);
+  @media screen and (max-width: 992px) {
+    top: 68%;
+    transform: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
 .gallery > img {
   grid-area: 1/1;
