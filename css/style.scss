@@ -22,6 +22,9 @@ canvas{display:block}
   text-align: center;
   position: relative;
   display: none;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
 }
 .wrapper-counter{
   height: 100%;
@@ -135,6 +138,9 @@ opacity: 0;
   margin: 0 auto;
   position: absolute;
   font-family:'Wendy One', sans-serif;
+  @media screen and (max-width: 767px) {
+    transform: translateY(-34%);
+  }
   .balloon {
     width: 738px;
     margin: 0 auto;
@@ -152,9 +158,9 @@ opacity: 0;
     padding: 10px;
     box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
     -webkit-transform-origin: bottom center;
-    @media screen and (max-width: 768px) {
-      width: 80px;
-      height: 108px;
+    @media screen and (max-width: 767px) {
+      width: 65px;
+      height: 90px;
     }
   }
   .balloon > div:nth-child(1) {
@@ -165,7 +171,7 @@ opacity: 0;
     -moz-animation: balloon1 6s ease-in-out infinite;
     -o-animation: balloon1 6s ease-in-out infinite;
     animation: balloon1 6s ease-in-out infinite;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       top: -65px
     }
   }
@@ -180,7 +186,7 @@ opacity: 0;
     -moz-animation: balloon2 6s ease-in-out infinite;
     -o-animation: balloon2 6s ease-in-out infinite;
     animation: balloon2 6s ease-in-out infinite;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       left: 0;
       top: 64px;
     }
@@ -196,7 +202,7 @@ opacity: 0;
     -moz-animation: balloon4 6s ease-in-out infinite;
     -o-animation: balloon4 6s ease-in-out infinite;
     animation: balloon4 6s ease-in-out infinite;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       left: 100px;
     }
   }
@@ -211,8 +217,9 @@ opacity: 0;
     -moz-animation: balloon1 5s ease-in-out infinite;
     -o-animation: balloon1 5s ease-in-out infinite;
     animation: balloon1 5s ease-in-out infinite;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       left: 200px;
+      top: 0;
     }
   }
   .balloon > div:nth-child(4):before {
@@ -226,8 +233,9 @@ opacity: 0;
     -moz-animation: balloon3 5s ease-in-out infinite;
     -o-animation: balloon3 5s ease-in-out infinite;
     animation: balloon3 5s ease-in-out infinite;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       left: 300px;
+      top: 0;
     }
   }
   .balloon > div:nth-child(5):before {
@@ -241,7 +249,7 @@ opacity: 0;
     -moz-animation: balloon2 3s ease-in-out infinite;
     -o-animation: balloon2 3s ease-in-out infinite;
     animation: balloon2 3s ease-in-out infinite;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       left: 0;
       top: -65px;
       right: 30px;
@@ -257,7 +265,7 @@ opacity: 0;
     left: 52px;
     content:"▲";
     font-size: 1em;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       left: 34px;
     }
   }
@@ -267,6 +275,9 @@ opacity: 0;
     position: relative;
     top: 18px;
     left: 0;
+    @media screen and (max-width: 767px) {
+      font-size: 3em;
+    }
   }
 }
 
@@ -777,8 +788,8 @@ opacity: 1;
   transform: translateY(-55%);
   left: 40%;
   transform: translateX(-40%);
-  @media screen and (max-width: 768px) {
-    top: 38%;
+  @media screen and (max-width: 767px) {
+    top: 20%;
     left: 32%;
     transform: none;
   }
@@ -997,8 +1008,8 @@ $n:5; /* number of images*/
   transform: translateY(-55%);
   left: 60%;
   transform: translateX(-60%);
-  @media screen and (max-width: 992px) {
-    top: 68%;
+  @media screen and (max-width: 767px) {
+    top: 46%;
     transform: none;
     left: 0;
     right: 0;

@@ -41,15 +41,9 @@ function addStar() {
   document.body.appendChild(s);
 }
 
-function clickAudio() {
-  var audio = document.getElementById("audio");
-  audio.play();
-  audio.muted = false;
-}
 setInterval(addStar, 50);
 window.onload = function () {
   // when the sound has been loaded, execute your code
-  clickAudio();
   countdown();
   addStar();
 };
