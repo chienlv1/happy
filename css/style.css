@@ -301,7 +301,8 @@ canvas {
 }
 @media screen and (max-width: 767px) {
   .container-birthday .balloon > div:before {
-    left: 34px;
+    left: 26px;
+    bottom: -14px;
   }
 }
 .container-birthday span {
@@ -885,31 +886,31 @@ canvas {
 .gallery > img:nth-child(1) {
   -webkit-animation-delay: calc(0*var(--d));
           animation-delay: calc(0*var(--d));
-  --r: 20deg;
+  --r: 19deg;
 }
 
 .gallery > img:nth-child(2) {
   -webkit-animation-delay: calc(-0.2*var(--d));
           animation-delay: calc(-0.2*var(--d));
-  --r: -2deg;
+  --r: -16deg;
 }
 
 .gallery > img:nth-child(3) {
   -webkit-animation-delay: calc(-0.4*var(--d));
           animation-delay: calc(-0.4*var(--d));
-  --r: 11deg;
+  --r: -10deg;
 }
 
 .gallery > img:nth-child(4) {
   -webkit-animation-delay: calc(-0.6*var(--d));
           animation-delay: calc(-0.6*var(--d));
-  --r: 11deg;
+  --r: -7deg;
 }
 
 .gallery > img:nth-child(5) {
   -webkit-animation-delay: calc(-0.8*var(--d));
           animation-delay: calc(-0.8*var(--d));
-  --r: -3deg;
+  --r: 8deg;
 }
 
 @-webkit-keyframes slide {

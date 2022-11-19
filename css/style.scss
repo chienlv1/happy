@@ -266,7 +266,8 @@ opacity: 0;
     content:"▲";
     font-size: 1em;
     @media screen and (max-width: 767px) {
-      left: 34px;
+      left: 26px;
+      bottom: -14px;
     }
   }
   span {
