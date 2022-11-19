@@ -857,7 +857,7 @@ canvas {
 }
 @media screen and (max-width: 767px) {
   .gallery {
-    top: 46%;
+    top: 50%;
     transform: none;
     left: 0;
     right: 0;
@@ -886,31 +886,31 @@ canvas {
 .gallery > img:nth-child(1) {
   -webkit-animation-delay: calc(0*var(--d));
           animation-delay: calc(0*var(--d));
-  --r: 19deg;
+  --r: -15deg;
 }
 
 .gallery > img:nth-child(2) {
   -webkit-animation-delay: calc(-0.2*var(--d));
           animation-delay: calc(-0.2*var(--d));
-  --r: -16deg;
+  --r: -10deg;
 }
 
 .gallery > img:nth-child(3) {
   -webkit-animation-delay: calc(-0.4*var(--d));
           animation-delay: calc(-0.4*var(--d));
-  --r: -10deg;
+  --r: -11deg;
 }
 
 .gallery > img:nth-child(4) {
   -webkit-animation-delay: calc(-0.6*var(--d));
           animation-delay: calc(-0.6*var(--d));
-  --r: -7deg;
+  --r: 20deg;
 }
 
 .gallery > img:nth-child(5) {
   -webkit-animation-delay: calc(-0.8*var(--d));
           animation-delay: calc(-0.8*var(--d));
-  --r: 8deg;
+  --r: -2deg;
 }
 
 @-webkit-keyframes slide {
